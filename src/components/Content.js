@@ -13,17 +13,17 @@ import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
-import Typography from '@mui/material/Typography';
+import Typography from "@mui/material/Typography";
 
 export default function Content() {
   return (
     <div id="component-container">
-    <hr class="solid"></hr>
-    <Grid container spacing={0}  className="content">
-      <Section1 />
-      <Section2 />
-      <Section3/>
-    </Grid>
+      <hr class="solid"></hr>
+      <Grid container spacing={0} className="content">
+        <Section1 />
+        <Section2 />
+        <Section3 />
+      </Grid>
     </div>
   );
 }
@@ -31,7 +31,7 @@ export default function Content() {
 function Section1() {
   return (
     <>
-      <Grid className="grid-item" item  lg={3}>
+      <Grid className="grid-item" item lg={3}>
         <List>
           <ListItem>
             <Typography variant="h4">Contact</Typography>
@@ -62,8 +62,8 @@ function Section1() {
           </ListItem>
         </List>
       </Grid>
-      
-      <Grid className="grid-item" item  lg={9}>
+
+      <Grid className="grid-item" item lg={9}>
         <Typography variant="h4">Profile</Typography>
         <p>
           Experienced Web Developer adept in all stages of advanced web
@@ -111,75 +111,99 @@ function Section2() {
           </ListItem>
         </List>
       </Grid>
-      <Grid className="grid-item"  item lg={9}>
-      <Grid container spacing={2} >
-      <Grid  item  xs={12}>
-        <Typography variant="h4">Work Experience (4 Years and 4 Months)</Typography>
-        </Grid>
-        <Grid className="children-left" item lg={9} xs={12}>
-          <Typography className="my-training" variant="h5">Laravel/Wordpress training</Typography>
-        </Grid>
-        <Grid className="children-right" item lg={3} xs={0}></Grid>
-        <Grid className="children-left" item lg={9} xs={6}>
-          <h4>Test technologies</h4>
-        </Grid>
-        <Grid item className="children-right" lg={3} xs={3}>
-          <h4>Mar 2019-Nov 2019</h4>
-        </Grid>
+      <Grid className="grid-item" item lg={9}>
+        <Grid container spacing={2}>
+          <Grid item xs={12}>
+            <Typography variant="h4">
+              Work Experience (4 Years and 4 Months)
+            </Typography>
+          </Grid>
+          <Grid className="children-left" item lg={9} xs={12}>
+            <Typography className="my-training" variant="h5">
+              Laravel/Wordpress training
+            </Typography>
+          </Grid>
+          <Grid className="children-right" item lg={3} xs={0}></Grid>
+          <Grid className="children-left" item lg={9} xs={6}>
+            <h4>Test technologies</h4>
+          </Grid>
+          <Grid item className="children-right" lg={3} xs={3}>
+            <h4>Mar 2019-Nov 2019</h4>
+          </Grid>
 
-        <Grid className="children-left" item lg={9} xs={12}>
-          <Typography className="my-training"  variant="h5">Web Developer</Typography>
-        </Grid>
-        <Grid className="children-right" item lg={3} xs={0}></Grid>
-        <Grid className="children-left" item lg={9} xs={6}>
-          <h4>Test Infotech</h4>
-        </Grid>
-        <Grid item className="children-right" lg={3} xs={3}>
-          <h4>Nov 2019-Mar 2021</h4>
-        </Grid>
-        <Grid item className="children-right" lg={12} xs={12}>
-        <List style={{listStyle:"disc"}}>
-          <ListItem sx={{ display: 'list-item' }} >
-           <p>Developed an API that connected the web application with 3rd party services and enabled the exchange of data in real-time</p>
-          </ListItem>
-          <ListItem sx={{ display: 'list-item' }} >
-           <p>Collaborated with cross-functional teams to identify customer requirements and develop technical solutions</p>
-          </ListItem>
-          <ListItem sx={{ display: 'list-item' }} >
-           <p>Implemented a responsive design that ensured the web application was accessible on all devices</p>
-          </ListItem>
-          </List>
-        </Grid>
+          <Grid className="children-left" item lg={9} xs={12}>
+            <Typography className="my-training" variant="h5">
+              Web Developer
+            </Typography>
+          </Grid>
+          <Grid className="children-right" item lg={3} xs={0}></Grid>
+          <Grid className="children-left" item lg={9} xs={6}>
+            <h4>Test Infotech</h4>
+          </Grid>
+          <Grid item className="children-right" lg={3} xs={3}>
+            <h4>Nov 2019-Mar 2021</h4>
+          </Grid>
+          <Grid item className="children-right" lg={12} xs={12}>
+            <List style={{ listStyle: "disc" }}>
+              <ListItem sx={{ display: "list-item" }}>
+                <p>
+                  Developed an API that connected the web application with 3rd
+                  party services and enabled the exchange of data in real-time
+                </p>
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                <p>
+                  Collaborated with cross-functional teams to identify customer
+                  requirements and develop technical solutions
+                </p>
+              </ListItem>
+              <ListItem sx={{ display: "list-item" }}>
+                <p>
+                  Implemented a responsive design that ensured the web
+                  application was accessible on all devices
+                </p>
+              </ListItem>
+            </List>
+          </Grid>
 
-        <Grid container spacing={0} >
-       
-        <Grid className="children-left" item lg={9}  xs={12}>
-          <Typography className="my-training"  variant="h5">Web Developer</Typography>
+          {/* <Grid container spacing={2}> */}
+            <Grid item className="children-left" lg={9} xs={12}>
+              <Typography className="my-training" variant="h5">
+                Web Developer
+              </Typography>
+            </Grid>
+            <Grid className="children-right" item lg={3} xs={0}></Grid>
+            <Grid className="children-left" item lg={9} xs={6}>
+              <h4>Test Solutions</h4>
+            </Grid>
+            <Grid item className="children-right" lg={3} xs={3}>
+              <h4>Mar 2021-July 2023</h4>
+            </Grid>
+            <Grid item className="children-left" lg={12} xs={12}>
+              <List style={{ listStyle: "disc" }}>
+                <ListItem sx={{ display: "list-item" }}>
+                  <p>
+                    Utilized object-oriented programming (OOP) principles to
+                    improve code readability and maintainability
+                  </p>
+                </ListItem>
+                <ListItem sx={{ display: "list-item" }}>
+                  <p>
+                    Implemented a responsive design that ensured the web
+                    application was accessible on all devices
+                  </p>
+                </ListItem>
+                <ListItem sx={{ display: "list-item" }}>
+                  <p>
+                    Developed an API that connected the web application with 3rd
+                    party services and enabled the exchange of data in real-time
+                  </p>
+                </ListItem>
+              </List>
+            </Grid>
+          </Grid>
         </Grid>
-        <Grid className="children-right" item lg={3}></Grid>
-        <Grid className="children-left" item lg={9} xs={6}>
-          <Typography variant="h6">Test Solutions</Typography>
-        </Grid>
-        <Grid item className="children-right" lg={3} xs={3}>
-          <Typography variant="h6">Mar 2021-July 2023</Typography>
-        </Grid>
-        <Grid item className="children-left" lg={12} xs={12}>
-        <List style={{listStyle:"disc"}}>
-          <ListItem sx={{ display: 'list-item' }} >
-           <p>Utilized object-oriented programming (OOP) principles to improve code readability and maintainability</p>
-          </ListItem>
-          <ListItem sx={{ display: 'list-item' }} >
-           <p>Implemented a responsive design that ensured the web application was accessible on all devices</p>
-          </ListItem>
-          <ListItem sx={{ display: 'list-item' }} >
-           <p>Developed an API that connected the web application with 3rd party services and enabled the exchange of data in real-time</p>
-          </ListItem>
-         
-          </List>
-        </Grid>
-        </Grid>
-        </Grid>
-      </Grid>
+      {/* </Grid> */}
     </>
   );
 }
@@ -194,32 +218,39 @@ function Section3() {
           </ListItem>
           <ListItem>
             <ListItemText primary="English" />
-            <hr className="language"/>
+            <hr className="language" />
           </ListItem>
           <ListItem>
             <ListItemText primary="Hindi" />
-            <hr className="language"/>
+            <hr className="language" />
           </ListItem>
           <ListItem>
             <ListItemText primary=" Punjabi " />
-            <hr className="language"/>
+            <hr className="language" />
           </ListItem>
         </List>
       </Grid>
       <Grid item className="grid-item children-left" lg={9}>
-        <Typography className="my-training"  variant="h5">Projects</Typography>
-        <List style={{listStyle:"disc"}}>
-          <ListItem sx={{ display: 'list-item' }} >
-           <p><a>https://www.facebook.com/campaign/landing.php</a></p>
+        <Typography className="my-training" variant="h5">
+          Projects
+        </Typography>
+        <List style={{ listStyle: "disc" }}>
+          <ListItem sx={{ display: "list-item" }}>
+            <p>
+              <a>https://www.facebook.com/campaign/landing.php</a>
+            </p>
           </ListItem>
-          <ListItem sx={{ display: 'list-item' }} >
-          <p><a>https://www.youtube.com/</a></p>
+          <ListItem sx={{ display: "list-item" }}>
+            <p>
+              <a>https://www.youtube.com/</a>
+            </p>
           </ListItem>
-          <ListItem sx={{ display: 'list-item' }} >
-          <p><a>https://www.google.co.in</a></p>
+          <ListItem sx={{ display: "list-item" }}>
+            <p>
+              <a>https://www.google.co.in</a>
+            </p>
           </ListItem>
-         
-          </List>
+        </List>
       </Grid>
     </>
   );
