@@ -121,10 +121,10 @@ function Section2() {
         </Grid>
         <Grid className="children-right" item lg={3} xs={0}></Grid>
         <Grid className="children-left" item lg={9} xs={6}>
-          <h4>Robort technologies</h4>
+          <h4>Test technologies</h4>
         </Grid>
         <Grid item className="children-right" lg={3} xs={3}>
-          <h4>Aug 2019-Nov 2019</h4>
+          <h4>Mar 2019-Nov 2019</h4>
         </Grid>
 
         <Grid className="children-left" item lg={9} xs={12}>
@@ -132,7 +132,7 @@ function Section2() {
         </Grid>
         <Grid className="children-right" item lg={3} xs={0}></Grid>
         <Grid className="children-left" item lg={9} xs={6}>
-          <h4>Robbb Infotech</h4>
+          <h4>Test Infotech</h4>
         </Grid>
         <Grid item className="children-right" lg={3} xs={3}>
           <h4>Nov 2019-Mar 2021</h4>
@@ -158,7 +158,7 @@ function Section2() {
         </Grid>
         <Grid className="children-right" item lg={3}></Grid>
         <Grid className="children-left" item lg={9} xs={6}>
-          <Typography variant="h6">Robbb Solutions</Typography>
+          <Typography variant="h6">Test Solutions</Typography>
         </Grid>
         <Grid item className="children-right" lg={3} xs={3}>
           <Typography variant="h6">Mar 2021-July 2023</Typography>
