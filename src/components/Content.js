@@ -13,6 +13,8 @@ import PhoneAndroidIcon from "@mui/icons-material/PhoneAndroid";
 import EmailIcon from "@mui/icons-material/Email";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 
+import Typography from '@mui/material/Typography';
+
 export default function Content() {
   return (
     <div id="component-container">
@@ -29,10 +31,10 @@ export default function Content() {
 function Section1() {
   return (
     <>
-      <Grid className="grid-item" item xs={3}>
+      <Grid className="grid-item" item  lg={3}>
         <List>
           <ListItem>
-            <h2>Contact</h2>
+            <Typography variant="h4">Contact</Typography>
           </ListItem>
           <ListItem>
             <ListItemAvatar>
@@ -61,8 +63,8 @@ function Section1() {
         </List>
       </Grid>
       
-      <Grid className="grid-item" item xs={9}>
-        <h2>Profile</h2>
+      <Grid className="grid-item" item  lg={9}>
+        <Typography variant="h4">Profile</Typography>
         <p>
           Experienced Web Developer adept in all stages of advanced web
           development. Knowledgeable in user interface, testing, and debugging
@@ -81,10 +83,10 @@ function Section1() {
 function Section2() {
   return (
     <>
-      <Grid className="grid-item" item xs={3}>
+      <Grid className="grid-item" item lg={3}>
         <List>
           <ListItem>
-            <h2>SKILLS</h2>
+            <Typography variant="h4">SKILLS</Typography>
           </ListItem>
           <ListItem>
             <ListItemText primary="Laravel" />
@@ -109,31 +111,33 @@ function Section2() {
           </ListItem>
         </List>
       </Grid>
-      <Grid className="grid-item"  item xs={9}>
-      <Grid container spacing={0} >
-        <h2>Work Experience (4 Years and 4 Months)</h2>
-        <Grid className="children-left" item xs={9}>
-          <h3>Laravel/Wordpress training</h3>
+      <Grid className="grid-item"  item lg={9}>
+      <Grid container spacing={2} >
+      <Grid  item  xs={12}>
+        <Typography variant="h4">Work Experience (4 Years and 4 Months)</Typography>
         </Grid>
-        <Grid className="children-right" item xs={3}></Grid>
-        <Grid className="children-left" item xs={9}>
+        <Grid className="children-left" item lg={9} xs={12}>
+          <Typography className="my-training" variant="h5">Laravel/Wordpress training</Typography>
+        </Grid>
+        <Grid className="children-right" item lg={3} xs={0}></Grid>
+        <Grid className="children-left" item lg={9} xs={6}>
           <h4>Robort technologies</h4>
         </Grid>
-        <Grid item className="children-right" xs={3}>
+        <Grid item className="children-right" lg={3} xs={3}>
           <h4>Aug 2019-Nov 2019</h4>
         </Grid>
 
-        <Grid className="children-left" item xs={9}>
-          <h3>Web Developer</h3>
+        <Grid className="children-left" item lg={9} xs={12}>
+          <Typography className="my-training"  variant="h5">Web Developer</Typography>
         </Grid>
-        <Grid className="children-right" item xs={3}></Grid>
-        <Grid className="children-left" item xs={9}>
+        <Grid className="children-right" item lg={3} xs={0}></Grid>
+        <Grid className="children-left" item lg={9} xs={6}>
           <h4>Robbb Infotech</h4>
         </Grid>
-        <Grid item className="children-right" xs={3}>
+        <Grid item className="children-right" lg={3} xs={3}>
           <h4>Nov 2019-Mar 2021</h4>
         </Grid>
-        <Grid item className="children-right" xs={12}>
+        <Grid item className="children-right" lg={12} xs={12}>
         <List style={{listStyle:"disc"}}>
           <ListItem sx={{ display: 'list-item' }} >
            <p>Developed an API that connected the web application with 3rd party services and enabled the exchange of data in real-time</p>
@@ -149,17 +153,17 @@ function Section2() {
 
         <Grid container spacing={0} >
        
-        <Grid className="children-left" item xs={9}>
-          <h3>Web Developer</h3>
+        <Grid className="children-left" item lg={9}  xs={12}>
+          <Typography className="my-training"  variant="h5">Web Developer</Typography>
         </Grid>
-        <Grid className="children-right" item xs={3}></Grid>
-        <Grid className="children-left" item xs={9}>
-          <h4>Robbb Solutions</h4>
+        <Grid className="children-right" item lg={3}></Grid>
+        <Grid className="children-left" item lg={9} xs={6}>
+          <Typography variant="h6">Robbb Solutions</Typography>
         </Grid>
-        <Grid item className="children-right" xs={3}>
-          <h4>Mar 2021-July 2023</h4>
+        <Grid item className="children-right" lg={3} xs={3}>
+          <Typography variant="h6">Mar 2021-July 2023</Typography>
         </Grid>
-        <Grid item className="children-left" xs={12}>
+        <Grid item className="children-left" lg={12} xs={12}>
         <List style={{listStyle:"disc"}}>
           <ListItem sx={{ display: 'list-item' }} >
            <p>Utilized object-oriented programming (OOP) principles to improve code readability and maintainability</p>
@@ -183,10 +187,10 @@ function Section2() {
 function Section3() {
   return (
     <>
-      <Grid className="grid-item" item xs={3}>
+      <Grid className="grid-item" item lg={3}>
         <List>
           <ListItem>
-            <h2>LANGUAGES</h2>
+            <Typography variant="h4">LANGUAGES</Typography>
           </ListItem>
           <ListItem>
             <ListItemText primary="English" />
@@ -202,8 +206,8 @@ function Section3() {
           </ListItem>
         </List>
       </Grid>
-      <Grid item className="grid-item children-left" xs={9}>
-        <h3>Projects</h3>
+      <Grid item className="grid-item children-left" lg={9}>
+        <Typography className="my-training"  variant="h5">Projects</Typography>
         <List style={{listStyle:"disc"}}>
           <ListItem sx={{ display: 'list-item' }} >
            <p><a>https://www.facebook.com/campaign/landing.php</a></p>
