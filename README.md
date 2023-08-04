@@ -3,7 +3,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 ## Sample Resume Template MUI Components
+
 First, run the development server:
+
+Node version 18.16
 
 ```bash
 npm run dev
