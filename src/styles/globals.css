@@ -36,7 +36,7 @@ div ul {
 }
 
 .header {
-	background: linear-gradient(-45deg, #bed0d3, #ffffff, #00eeff, #3c998e);
+	background: linear-gradient(-45deg, #b3b016, #ffffff, #ffee00, #ffbb00);
 	animation: gradient2 15s ease infinite;
 	color: red;
 	justify-content: center;
@@ -124,3 +124,53 @@ margin-top: 100px;
 .my-training{
 	margin-top:10px;
 }
+@media  (max-width: 1500px) {
+	hr.language{
+		width:65% !important;
+	}
+}
+ul{
+	padding:0;
+}
+@media  (max-width: 1200px) {
+	div ul{
+		display:flex;
+		flex-direction:column;
+
+	}
+	div ul li {
+		/* text-align:center !important; */
+		/* width: 50% !important; */
+		/* justify-content: center !important;
+		margin:0 auto 0 auto; */
+		/* flex-direction:column;
+		align-items:center !important; */
+	}
+	div ul li div{
+		flex: inherit !important;
+	}
+	div ul li h4{
+		margin:auto !important;
+	}
+	.custom-flex-box{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+	  .grid-item.language-section .language-list li{
+		min-width:250px;
+	  }
+	  .grid-item.language-section .language-list li div{
+		min-width:75px;
+	  }
+	  .children-left{
+		text-align:center;
+	  }
+}
+@media  (max-width: 1200px)  and (min-width:700px){
+	.grid-item .side-listing li{
+		min-width:600px !important;
+	  }
+}
+	
+

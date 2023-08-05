@@ -18,7 +18,7 @@ import Typography from "@mui/material/Typography";
 export default function Content() {
   return (
     <div id="component-container">
-      <hr class="solid"></hr>
+      <hr className="solid"></hr>
       <Grid container spacing={0} className="content">
         <Section1 />
         <Section2 />
@@ -31,11 +31,13 @@ export default function Content() {
 function Section1() {
   return (
     <>
-      <Grid className="grid-item" item lg={3}>
-        <List>
-          <ListItem>
-            <Typography variant="h4">Contact</Typography>
-          </ListItem>
+      <Grid className="grid-item" item lg={3} xs={12}>
+        <div className="custom-flex-box">
+      <Typography variant="h4">Contact</Typography>
+        <List className="side-listing">
+          {/* <ListItem>
+         
+          </ListItem> */}
           <ListItem>
             <ListItemAvatar>
               <Avatar>
@@ -61,9 +63,10 @@ function Section1() {
             <ListItemText primary=" Meena Bazaar, Jama Masjid, Chandni Chowk, Delhi, 110006 " />
           </ListItem>
         </List>
+        </div>
       </Grid>
 
-      <Grid className="grid-item" item lg={9}>
+      <Grid className="grid-item" item lg={9} xs={12}>
         <Typography variant="h4">Profile</Typography>
         <p>
           Experienced Web Developer adept in all stages of advanced web
@@ -83,11 +86,13 @@ function Section1() {
 function Section2() {
   return (
     <>
-      <Grid className="grid-item" item lg={3}>
-        <List>
-          <ListItem>
-            <Typography variant="h4">SKILLS</Typography>
-          </ListItem>
+      <Grid className="grid-item section2" item lg={3} xs={12}>
+        <div className="custom-flex-box">
+      <Typography variant="h4">SKILLS</Typography>
+        <List className="side-listing">
+          {/* <ListItem>
+          
+          </ListItem> */}
           <ListItem>
             <ListItemText primary="Laravel" />
           </ListItem>
@@ -110,12 +115,13 @@ function Section2() {
             <ListItemText primary="Angular js" />
           </ListItem>
         </List>
+        </div>
       </Grid>
-      <Grid className="grid-item" item lg={9}>
+      <Grid className="grid-item" item lg={9} xs={12}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
             <Typography variant="h4">
-              Work Experience (4 Years and 4 Months)
+             Corporate Work Experience (4 + Years)
             </Typography>
           </Grid>
           <Grid className="children-left" item lg={9} xs={12}>
@@ -123,11 +129,11 @@ function Section2() {
               Laravel/Wordpress training
             </Typography>
           </Grid>
-          <Grid className="children-right" item lg={3} xs={0}></Grid>
+          <Grid className="children-right" item lg={3} xs={12}></Grid>
           <Grid className="children-left" item lg={9} xs={6}>
             <h4>Test technologies</h4>
           </Grid>
-          <Grid item className="children-right" lg={3} xs={3}>
+          <Grid item className="children-right" lg={3} xs={6}>
             <h4>Mar 2019-Nov 2019</h4>
           </Grid>
 
@@ -136,11 +142,11 @@ function Section2() {
               Web Developer
             </Typography>
           </Grid>
-          <Grid className="children-right" item lg={3} xs={0}></Grid>
+          <Grid className="children-right" item lg={3} xs={12}></Grid>
           <Grid className="children-left" item lg={9} xs={6}>
             <h4>Test Infotech</h4>
           </Grid>
-          <Grid item className="children-right" lg={3} xs={3}>
+          <Grid item className="children-right" lg={3} xs={6}>
             <h4>Nov 2019-Mar 2021</h4>
           </Grid>
           <Grid item className="children-right" lg={12} xs={12}>
@@ -172,11 +178,11 @@ function Section2() {
                 Web Developer
               </Typography>
             </Grid>
-            <Grid className="children-right" item lg={3} xs={0}></Grid>
+            <Grid className="children-right" item lg={3} xs={12}></Grid>
             <Grid className="children-left" item lg={9} xs={6}>
               <h4>Test Solutions</h4>
             </Grid>
-            <Grid item className="children-right" lg={3} xs={3}>
+            <Grid item className="children-right" lg={3} xs={6}>
               <h4>Mar 2021-July 2023</h4>
             </Grid>
             <Grid item className="children-left" lg={12} xs={12}>
@@ -211,11 +217,14 @@ function Section2() {
 function Section3() {
   return (
     <>
-      <Grid className="grid-item" item lg={3}>
-        <List>
-          <ListItem>
-            <Typography variant="h4">LANGUAGES</Typography>
-          </ListItem>
+      <Grid className="grid-item language-section" item lg={3} xs={12}>
+        <div className="custom-flex-box">
+        <Typography variant="h4">LANGUAGES</Typography>
+      
+        <List className="language-list side-listing">
+          {/* <ListItem>
+         
+          </ListItem> */}
           <ListItem>
             <ListItemText primary="English" />
             <hr className="language" />
@@ -229,8 +238,11 @@ function Section3() {
             <hr className="language" />
           </ListItem>
         </List>
+        </div>
       </Grid>
-      <Grid item className="grid-item children-left" lg={9}>
+      <Grid item className="grid-item children-left" lg={9} xs={12}>
+      <div className="custom-flex-box">
+
         <Typography className="my-training" variant="h5">
           Projects
         </Typography>
@@ -251,6 +263,7 @@ function Section3() {
             </p>
           </ListItem>
         </List>
+        </div>
       </Grid>
     </>
   );
