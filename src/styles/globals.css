@@ -1,8 +1,8 @@
 body {
-	background: linear-gradient(-45deg, #864f4f, #ff0000, #000000, #3f4746);
+	background: linear-gradient(-45deg, #864f4f, #ff0000, #ff0000, #3f4746);
 	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
+	/* animation: gradient 15s ease infinite; */
+	height: 100%;
 	color: white;
 	font-weight: 200;
 	margin: 0;
@@ -11,7 +11,7 @@ body {
 }
 
 
-@keyframes gradient {
+/* @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -23,7 +23,7 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
 
 
 .content {
@@ -37,7 +37,7 @@ div ul {
 
 .header {
 	background: linear-gradient(-45deg, #b3b016, #ffffff, #ffee00, #ffbb00);
-	animation: gradient2 15s ease infinite;
+	/* animation: gradient2 15s ease infinite; */
 	color: red;
 	justify-content: center;
 	text-align: center;
@@ -55,7 +55,7 @@ div ul {
         width: 100%;
 }
 
-@keyframes gradient2 {
+/* @keyframes gradient2 {
 	0% {
 		background-position: 0% 50%;
 	}
@@ -67,7 +67,7 @@ div ul {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
 
 .header h1 {
 	font-size: 3rem;
@@ -124,14 +124,19 @@ margin-top: 100px;
 .my-training{
 	margin-top:10px;
 }
+body .download-button button{
+	color: red;
+    float: right;
+}
+ul{
+	padding:0;
+}
 @media  (max-width: 1500px) {
 	hr.language{
 		width:65% !important;
 	}
 }
-ul{
-	padding:0;
-}
+
 @media  (max-width: 1200px) {
 	div ul{
 		display:flex;
@@ -166,11 +171,35 @@ ul{
 	  .children-left{
 		text-align:center;
 	  }
+	  div ul {
+		padding: 0 0 0 0 !important;
+	}
 }
 @media  (max-width: 1200px)  and (min-width:700px){
 	.grid-item .side-listing li{
 		min-width:600px !important;
 	  }
+}
+@media (max-width:600px){
+	body h1{
+		font-size:2rem !important;
+	}
+	body h2{
+		font-size:1.8rem !important;
+	}
+body {
+	font-size:12px !important;
+}
+body h4{
+	font-size:1.3rem !important;
+}
+body h5{
+	font-size:1.25rem !important;
+}
+body .MuiGrid-root .MuiGrid-item{
+	padding:10px 5px 10px 5px !important;
+}
+
 }
 	
 

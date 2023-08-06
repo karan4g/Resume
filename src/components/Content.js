@@ -120,21 +120,33 @@ function Section2() {
       <Grid className="grid-item" item lg={9} xs={12}>
         <Grid container spacing={2}>
           <Grid item xs={12}>
+          <div className="custom-flex-box">
             <Typography variant="h4">
              Corporate Work Experience (4 + Years)
             </Typography>
+            </div>
           </Grid>
           <Grid className="children-left" item lg={9} xs={12}>
+          <div className="custom-flex-box">
             <Typography className="my-training" variant="h5">
               Laravel/Wordpress training
             </Typography>
+            </div>
           </Grid>
           <Grid className="children-right" item lg={3} xs={12}></Grid>
           <Grid className="children-left" item lg={9} xs={6}>
-            <h4>Test technologies</h4>
+          <div className="custom-flex-box">
+          <Typography className="my-training" variant="h4">
+            Test technologies
+            </Typography>
+            </div>
           </Grid>
           <Grid item className="children-right" lg={3} xs={6}>
-            <h4>Mar 2019-Nov 2019</h4>
+          <div className="custom-flex-box">
+          <Typography className="my-training" variant="h4">
+            Mar 2019-Nov 2019
+            </Typography>
+            </div>
           </Grid>
 
           <Grid className="children-left" item lg={9} xs={12}>
@@ -144,12 +156,17 @@ function Section2() {
           </Grid>
           <Grid className="children-right" item lg={3} xs={12}></Grid>
           <Grid className="children-left" item lg={9} xs={6}>
-            <h4>Test Infotech</h4>
+          <Typography className="my-training" variant="h4">
+            Test Infotech
+            </Typography>
           </Grid>
           <Grid item className="children-right" lg={3} xs={6}>
-            <h4>Nov 2019-Mar 2021</h4>
+          <Typography className="my-training" variant="h4">
+            Nov 2019-Mar 2021
+            </Typography>
           </Grid>
           <Grid item className="children-right" lg={12} xs={12}>
+          <div className="custom-flex-box">
             <List style={{ listStyle: "disc" }}>
               <ListItem sx={{ display: "list-item" }}>
                 <p>
@@ -170,22 +187,34 @@ function Section2() {
                 </p>
               </ListItem>
             </List>
+            </div>
           </Grid>
 
           {/* <Grid container spacing={2}> */}
             <Grid item className="children-left" lg={9} xs={12}>
+            <div className="custom-flex-box">
               <Typography className="my-training" variant="h5">
                 Web Developer
               </Typography>
+              </div>
             </Grid>
             <Grid className="children-right" item lg={3} xs={12}></Grid>
             <Grid className="children-left" item lg={9} xs={6}>
-              <h4>Test Solutions</h4>
+            <div className="custom-flex-box">
+            <Typography className="my-training" variant="h4">
+                Test Solutions
+          </Typography>
+              </div>
             </Grid>
             <Grid item className="children-right" lg={3} xs={6}>
-              <h4>Mar 2021-July 2023</h4>
+            <div className="custom-flex-box">
+            <Typography className="my-training" variant="h4">
+            Mar 2021-July 2023
+            </Typography>
+              </div>
             </Grid>
             <Grid item className="children-left" lg={12} xs={12}>
+            <div className="custom-flex-box">
               <List style={{ listStyle: "disc" }}>
                 <ListItem sx={{ display: "list-item" }}>
                   <p>
@@ -206,6 +235,7 @@ function Section2() {
                   </p>
                 </ListItem>
               </List>
+              </div>
             </Grid>
           </Grid>
         </Grid>

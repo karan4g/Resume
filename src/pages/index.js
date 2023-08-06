@@ -5,11 +5,56 @@ import styles from '@/styles/Home.module.css'
 import Header from "../components/Header"
 import Content from "../components/Content"
 import Grid from '@mui/material/Grid';
+import { jsPDF } from "jspdf";
+// import * as htmlToImage from 'html-to-image';
+
+
 
 
 const inter = Inter({ subsets: ['latin'] })
 Content
 export default function Home() {
+//  function printDocument() {
+//     const input = document.getElementById('divToPrint');
+//     html2canvas(input)
+//       .then((canvas) => {
+//         const imgData = canvas.toDataURL('image/png');
+//         const pdf = new jsPDF();
+//         pdf.addImage(imgData, 'JPEG', 0, 0);
+//         // pdf.output('dataurlnewwindow');
+//         pdf.save("Resume.pdf");
+//       })
+//     ;
+//   }
+const printDocument=()=>{
+  return true;
+//   const elementHTML=document.getElementsByTagName('html')[0];
+// console.log(elementHTML.innerHTML," this is element html")
+//   var doc = new jsPDF();
+//   doc.html(elementHTML.innerHTML, {
+//     callback: function(doc) {
+//         // Save the PDF
+//         doc.save('document-html.pdf');
+//     },
+//     margin: [10, 10, 10, 10],
+//     // autoPaging: 'text',
+//     x: 0,
+//     y: 0,
+//     width: 220, //target width in the PDF document
+//     windowWidth: 1600 //window width in CSS pixels
+// });
+// htmlToImage.toCanvas(document.getElementsByTagName('body')[0], { quality: 1 })
+//         .then(function (canvas) {
+//           const dataUrl = canvas.toDataURL('image/png');
+//           console.log(dataUrl," this is dataurl")
+//           const pdf = new jsPDF();          
+//           const imgProps= pdf.getImageProperties(dataUrl);
+//           const pdfWidth = pdf.internal.pageSize.getWidth();
+//           const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+//           pdf.addImage(dataUrl, 'PNG', 0, 0,pdfWidth, pdfHeight);
+//           pdf.save("Resume.pdf"); 
+//         });
+}
   return (
     <>
       <Head>
@@ -18,8 +63,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Grid container spacing={0} >
-      <Header/>
+      <Grid id="divToPrint" container spacing={0} >
+      <Header printDocument={printDocument} />
       <Content />
       </Grid>
     </>

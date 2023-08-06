@@ -3,14 +3,18 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import styles from '@/styles/Home.module.css'
+import Button from '@mui/material/Button';
 
 
 
 
 
-export default function Header(){
+export default function Header(props){
 
-
+    const {printDocument}=props;
+    const handleClick =()=>{
+        printDocument();
+    }
     useEffect(() => {
         let element = document.getElementById('head-contain');
         let elementContainer = document.getElementById('component-container');
@@ -32,6 +36,10 @@ export default function Header(){
     }, []);
     return (
         <Grid container spacing={2} id="head-contain" className="header">
+            <Grid item xs={12} className="download-button">
+            <Button onClick={()=>handleClick()} variant="text">Download</Button>
+
+            </Grid>
           <Grid item xs={12}>
         <h1>{process.env.NEXT_PUBLIC_USERNAME || "Tony Stark"}</h1>
         </Grid>
