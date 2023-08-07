@@ -6,7 +6,11 @@ import Header from "../components/Header"
 import Content from "../components/Content"
 import Grid from '@mui/material/Grid';
 import { jsPDF } from "jspdf";
-// import * as htmlToImage from 'html-to-image';
+import * as htmlToImage from 'html-to-image';
+
+// import pdfMake from "pdfmake";
+// import pdfMake from "pdfmake/build/pdfmake";
+import html2canvas from "html2canvas";
 
 
 
@@ -27,33 +31,75 @@ export default function Home() {
 //     ;
 //   }
 const printDocument=()=>{
-  return true;
-//   const elementHTML=document.getElementsByTagName('html')[0];
-// console.log(elementHTML.innerHTML," this is element html")
-//   var doc = new jsPDF();
-//   doc.html(elementHTML.innerHTML, {
-//     callback: function(doc) {
-//         // Save the PDF
-//         doc.save('document-html.pdf');
-//     },
-//     margin: [10, 10, 10, 10],
-//     // autoPaging: 'text',
-//     x: 0,
-//     y: 0,
-//     width: 220, //target width in the PDF document
-//     windowWidth: 1600 //window width in CSS pixels
+return true;
+// htmlToImage.toPng(document.getElementsByTagName('body')[0], { quality: 1.6 })
+// .then(function (dataUrl) {
+  
+//   console.log(dataUrl," this is image")
+//   var link = document.createElement('a');
+//   link.download = 'my-image-name.jpeg';
+//   const pdf = new jsPDF();
+//   const imgProps= pdf.getImageProperties(dataUrl);
+//   // console.log(imgProps," this is image props")
+//   const pdfWidth = pdf.internal.pageSize.getWidth();
+//   const pdfHeight = pdf.internal.pageSize.getHeight();
+//   // const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
+//   pdf.addImage(dataUrl, 'PNG', 0, 0,pdfWidth, pdfHeight);
+//   console.log(pdfWidth," thi sis pdf width ",pdfHeight," this is pdf height ")
+//   // pdf.addImage(dataUrl, 'PNG', 0, 0,190, 1600);
+//   pdf.save("download.pdf"); 
 // });
-// htmlToImage.toCanvas(document.getElementsByTagName('body')[0], { quality: 1 })
-//         .then(function (canvas) {
-//           const dataUrl = canvas.toDataURL('image/png');
-//           console.log(dataUrl," this is dataurl")
-//           const pdf = new jsPDF();          
-//           const imgProps= pdf.getImageProperties(dataUrl);
-//           const pdfWidth = pdf.internal.pageSize.getWidth();
-//           const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-//           pdf.addImage(dataUrl, 'PNG', 0, 0,pdfWidth, pdfHeight);
-//           pdf.save("Resume.pdf"); 
-//         });
+
+
+// const pdf = new jsPDF();
+// var source = window.document.getElementsByTagName("body")[0];
+// console.log(source.getBoundingClientRect()," tttt" ,window.screen.width)
+// pdf.html(document.body,
+//    {
+//   callback: function (doc) {
+//     doc.save("mydoc.pdf");
+//   },
+//   width: 190,
+//   // windowWidth:window.screen.width
+// });
+
+
+// const pdfTable = document.getElementsByTagName('html')[0];
+// html2canvas(pdfTable).then(function (canvas) {
+//   var dataUrl=canvas.toDataURL("image/png", 1.0);
+//   var pdf=new jsPDF("p","mm","a4");
+//   const imgProps= pdf.getImageProperties(dataUrl);
+//   const pdfWidth = pdf.internal.pageSize.getWidth();
+//   const pdfHeight = pdf.internal.pageSize.getHeight();
+
+//   console.log(dataUrl," tttt")
+
+//   var imgWidth =  210; 
+//   var pageHeight  = 295;  
+//   var imgHeight = canvas.height * imgWidth / canvas.width;
+//   var heightLeft = imgHeight;
+//   var position = 10; // give some top padding to first page
+  
+//   pdf.addImage(dataUrl, 'PNG', 0, position, imgWidth, imgHeight);
+//   heightLeft -= pageHeight;
+  
+//   console.log(imgHeight," this is image height")
+//   var i=0;
+//   while (heightLeft >= 0) {
+//     if(i !=0){
+//       position=position-10;
+//     }
+//     console.log(heightLeft," this is height left ",imgHeight," this is image height ",pageHeight," this is pageheight")
+//     position += heightLeft - imgHeight; // top padding for other pages
+//     console.log(position," this is position")
+//     pdf.addPage();
+//     pdf.addImage(dataUrl, 'PNG', 0, position, imgWidth, imgHeight);
+//     heightLeft -= pageHeight;
+//     i++;
+//   }
+//   pdf.save( 'file.pdf');
+// });
+
 }
   return (
     <>

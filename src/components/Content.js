@@ -167,7 +167,7 @@ function Section2() {
           </Grid>
           <Grid item className="children-right" lg={12} xs={12}>
           <div className="custom-flex-box">
-            <List style={{ listStyle: "disc" }}>
+            <List className="wide-listing" style={{ listStyle: "disc" }}>
               <ListItem sx={{ display: "list-item" }}>
                 <p>
                   Developed an API that connected the web application with 3rd
@@ -215,7 +215,7 @@ function Section2() {
             </Grid>
             <Grid item className="children-left" lg={12} xs={12}>
             <div className="custom-flex-box">
-              <List style={{ listStyle: "disc" }}>
+              <List className="wide-listing" style={{ listStyle: "disc" }}>
                 <ListItem sx={{ display: "list-item" }}>
                   <p>
                     Utilized object-oriented programming (OOP) principles to
@@ -276,7 +276,7 @@ function Section3() {
         <Typography className="my-training" variant="h5">
           Projects
         </Typography>
-        <List style={{ listStyle: "disc" }}>
+        <List className="wide-listing" style={{ listStyle: "disc" }}>
           <ListItem sx={{ display: "list-item" }}>
             <p>
               <a>https://www.facebook.com/campaign/landing.php</a>

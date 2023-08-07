@@ -17,8 +17,11 @@
     "cross-env": "^7.0.3",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "html-to-image": "^1.11.11",
+    "html2canvas": "^1.4.1",
     "jspdf": "^2.5.1",
     "next": "13.4.12",
+    "pdfmake": "^0.2.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "styled-components": "^5.3.11"
